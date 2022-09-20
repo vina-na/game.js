@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.center {
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+}
+
+ .center img {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+ .container .btr{
+ 	position: absolute;
+ 	top: 48%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);
+ 	background-color: #f1f1f1;
+ 	color: black;
+ 	font-size: 16px;
+ 	padding: 16px 30px;
+ 	border: none;
+ 	cursor: pointer;
+ 	border-radius: 5px;
+ 	text-align: center;
+ }
+.container .btr:hover{
+	background-color: orange;
+	color: yellow;
+}
+.container .bta{
+ 	position: absolute;
+ 	top: 70%;
+ 	left: 70%;
+ 	transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);
+ 	background-color: #f1f1f1;
+ 	color: black;
+ 	font-size: 16px;
+ 	padding: 16px 30px;
+ 	border: none;
+ 	cursor: pointer;
+ 	border-radius: 5px;
+ 	text-align: center;
+ }
+.container .bta:hover{
+	background-color: orange;
+	color: yellow;
+}
+.container .btv{
+ 	position: absolute;
+ 	top: 70%;
+ 	left: 30%;
+ 	transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);
+ 	background-color: #f1f1f1;
+ 	color: black;
+ 	font-size: 16px;
+ 	padding: 16px 30px;
+ 	border: none;
+ 	cursor: pointer;
+ 	border-radius: 5px;
+ 	text-align: center;
+ }
+.container .btv:hover{
+	background-color: orange;
+	color: yellow;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<div class="container">
+	<img src="Menu.jpg" alt="img" style="width:500px, height:100px">
+	<a href="about.html" class="bta">About</a>
+	<a href="play.html" class="btr">Play</a>
+<audio id="sound">
+	<source src="music.mp3"/></audio>
+</audio>
+<button id="correct" class="btv">Sound</button>
+</div>
+</body>
+<script>
+	const mySound = document.getElementById("sound");
+	const correctButton = document.getElementById("correct");
+	correctButton.addEventListener("click", function(){ mySound.play()})
+</script>
+</html>
